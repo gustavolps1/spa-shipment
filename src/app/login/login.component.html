@@ -1,0 +1,40 @@
+<mat-stepper class="stepper-container" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+        <mat-card class="login-card">
+            <mat-card-title class="login-card-title">SPA-SHIPMENT</mat-card-title>
+            <mat-card-content>
+                <form class="login-form">
+                    <mat-form-field appearance="outline" class="input-wrapper">
+                        <mat-label>Matrícula</mat-label>
+                        <input matInput>
+                        <mat-icon matSuffix>account_box</mat-icon>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline" class="input-wrapper">
+                        <mat-label>Chave de acesso</mat-label>
+                        <input matInput>
+                        <span mat-icon-button matSuffix>
+                            <mat-icon>vpn_key</mat-icon>
+                        </span>
+                    </mat-form-field>
+                    <button class="login-button" mat-flat-button color="primary">Continuar</button>
+                </form>
+            </mat-card-content>
+            <mat-card-footer>
+                <button class="access-token-button" mat-stroked-button matStepperNext color="primary">Gerar
+                    chave de acesso</button>
+                <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+            </mat-card-footer>
+        </mat-card>
+    </mat-step>
+
+    <mat-step [stepControl]="secondFormGroup" optional>
+        <div class="access-token-container">
+            <h1>Tela para geração da chave de acesso</h1>
+            <div>
+                <button mat-button matStepperPrevious>Voltar</button>
+            </div>
+        </div>
+    </mat-step>
+
+</mat-stepper>
