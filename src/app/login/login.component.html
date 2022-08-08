@@ -21,8 +21,7 @@
                 </form>
             </mat-card-content>
             <mat-card-footer>
-                <button class="access-token-button" mat-stroked-button matStepperNext color="primary">Gerar
-                    chave de acesso</button>
+                <button class="access-token-button" mat-stroked-button matStepperNext color="primary">GERAR CHAVE DE ACESSO</button>
                 <mat-progress-bar mode="indeterminate"></mat-progress-bar>
             </mat-card-footer>
         </mat-card>
@@ -30,11 +29,35 @@
 
     <mat-step [stepControl]="secondFormGroup" optional>
         <div class="access-token-container">
-            <h1>Tela para geração da chave de acesso</h1>
             <div>
-                <button mat-button matStepperPrevious>Voltar</button>
+                <h1>Verificação em duas etapas</h1>
+            </div>
+
+            <div class="input-access-token">
+                <span>Matrícula</span>
+                <br>
+                <mat-form-field appearance="fill">
+                    <input matInput placeholder="Ex: X282537" required>
+                </mat-form-field>
+            </div>
+            <div class="input-access-token">
+                <span>Código de Verificação Google Authenticator</span>
+                <br>
+                <mat-form-field appearance="fill">
+                    <input matInput placeholder="Ex: 232411" required>
+                </mat-form-field>
+            </div>
+            <div>
+                <button mat-button matStepperPrevious color="primary">Voltar</button>
+                <button mat-flat-button matStepperNext color="primary">Enviar</button>
             </div>
         </div>
     </mat-step>
 
+    <mat-step [stepControl]="thirdFormGroup" optional>
+        <div class="access-token-container">
+            <h1>Chave de acesso enviada para seu e-mail corporativo</h1>
+            <button mat-button onClick="window.location.reload()" color="primary">Ok</button>
+        </div>
+    </mat-step>
 </mat-stepper>

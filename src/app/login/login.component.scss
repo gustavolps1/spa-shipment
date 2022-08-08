@@ -1,6 +1,7 @@
 .stepper-container {
   background-color:transparent;
   display: flex;
+  position: static;
   align-items: center;
   justify-content: center;
 
@@ -14,8 +15,9 @@
   padding: 20px;
 }
 .access-token-button {
+  font-size: 14px;
   margin-top: 25px;
-  padding: 8px;
+  height: 58px;
   width: 100%;
   border-radius: 0;
   border-bottom: 0;
@@ -24,13 +26,44 @@
 }
 
 .access-token-container {
+  text-align: center;
   background-color: white;
-  height: 490px;
+}
+.input-access-token{
+padding: 14px;
 }
 
 .login-button {
-  height: 40px;
-  width: 230px;
+  height: 45px;
+  width: 225px;
+  margin-top: 20px;
+}
+
+.loader {
+  display: none;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.loading {
+  border: 2px solid #ccc;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border-top-color: #1ecd97;
+  border-left-color:  #1ecd97;
+  animation: spin 1s infinite ease-in;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
 }
 
 

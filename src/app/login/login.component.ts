@@ -20,6 +20,8 @@ export class LoginComponent {
   secondFormGroup = this._formBuilder.group({
     secondCtrl: ['', Validators.required],
   });
-
+  thirdFormGroup = this._formBuilder.group({
+    thirdCtrl: ['', Validators.required],
+  });
   constructor(private _formBuilder: FormBuilder) {}
 }
