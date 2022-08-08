@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
+## Integrated services
+
+[api-shipment-auth](https://github.com/gustavolps1/api-shipment-auth)
+[api-shipment-customer](https://github.com/gustavolps1/api-shipment-customer)
+[api-identity-document-formatter](https://github.com/gustavolps1/api-identity-document-formatter)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
