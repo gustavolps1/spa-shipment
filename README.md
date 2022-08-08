@@ -4,8 +4,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Integrated services
 
-[api-shipment-auth](https://github.com/gustavolps1/api-shipment-auth)
-[api-shipment-customer](https://github.com/gustavolps1/api-shipment-customer)
+[api-shipment-auth](https://github.com/gustavolps1/api-shipment-auth)\
+[api-shipment-customer](https://github.com/gustavolps1/api-shipment-customer)\
 [api-identity-document-formatter](https://github.com/gustavolps1/api-identity-document-formatter)
 
 ## Development server
